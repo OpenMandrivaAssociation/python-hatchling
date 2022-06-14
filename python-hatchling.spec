@@ -7,8 +7,10 @@ URL:		https://pypi.org/project/hatchling/
 License:	GPL
 Group:		Development/Python
 BuildRequires:	python-pip
-BuildRequires:	python3dist(pathspec)
+BuildRequires:	python3dist(pathspec) >= 0.9
 BuildRequires:	python3dist(wheel)
+BuildRequires:	python3dist(pluggy) >= 1.0.0
+BuildRequires:	python3dist(packaging) >= 21.3
 BuildArch:	noarch
 
 %description
