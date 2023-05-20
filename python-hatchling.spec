@@ -1,5 +1,5 @@
 Name:		python-hatchling
-Version:	1.14.1
+Version:	1.17.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-%{version}.tar.gz
 Summary:	Modern, extensible Python build backend
