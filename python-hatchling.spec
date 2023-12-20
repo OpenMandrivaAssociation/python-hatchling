@@ -1,6 +1,6 @@
 Name:		python-hatchling
-Version:	1.18.0
-Release:	2
+Version:	1.21.0
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-%{version}.tar.gz
 Summary:	Modern, extensible Python build backend
 URL:		https://pypi.org/project/hatchling/
