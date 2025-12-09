@@ -1,11 +1,13 @@
 Name:		python-hatchling
-Version:	1.27.0
+Version:	1.28.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-%{version}.tar.gz
 Summary:	Modern, extensible Python build backend
 URL:		https://pypi.org/project/hatchling/
 License:	GPL
 Group:		Development/Python
+BuildRequires:	python
+BuildSystem:	python
 BuildRequires:	python%{py_ver}dist(pip)
 BuildRequires:	python%{py_ver}dist(pathspec) >= 0.9
 BuildRequires:	python%{py_ver}dist(wheel)
@@ -16,18 +18,6 @@ BuildArch:	noarch
 
 %description
 Modern, extensible Python build backend.
-
-%prep
-%autosetup -p1 -n hatchling-%{version}
-
-%build
-#mkdir wheels
-#pip wheel --wheel-dir wheels --no-deps --no-build-isolation --verbose .
-%py_build
-
-%install
-#pip install --root=%{buildroot} --no-deps --verbose --ignore-installed --no-warn-script-location --no-index --no-cache-dir --find-links wheels wheels/*.whl
-%py_install
 
 %files
 %{_bindir}/hatchling
