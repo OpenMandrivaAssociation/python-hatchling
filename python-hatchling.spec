@@ -1,7 +1,7 @@
 %define module hatchling
 
 Name:		python-hatchling
-Version:	1.29.0
+Version:	1.30.1
 Release:	1
 Summary:	Modern, extensible Python build backend
 License:	MIT
